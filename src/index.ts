@@ -10,10 +10,19 @@ function convertOdometry(inputMessage: Odometry): SceneUpdate
 
   const arrowPrimitive: ArrowPrimitive = {
     pose: {
-      position: { x: pose.pose.position.x, y: pose.pose.position.y, z: pose.pose.position.z },
-      orientation: { x: pose.pose.orientation.x, y: pose.pose.orientation.y, z: pose.pose.orientation.z, w: pose.pose.orientation.w },
+      position: {
+        x: pose.pose.position.x,
+        y: pose.pose.position.y,
+        z: pose.pose.position.z
+      },
+      orientation: {
+        x: pose.pose.orientation.x,
+        y: pose.pose.orientation.y,
+        z: pose.pose.orientation.z,
+        w: pose.pose.orientation.w
+      },
     },
-    color: { r: 1, g: 1, b: 1, a: 1 },
+    color: { r: 1, g: 0, b: 0, a: 1 },
     shaft_length: 1,
     shaft_diameter: 0.1,
     head_length: 0.3,
@@ -24,7 +33,7 @@ function convertOdometry(inputMessage: Odometry): SceneUpdate
     deletions: [],
     entities: [
       {
-        id: "detectedObjects-entities",
+        id: "odometry",
         timestamp: header.stamp,
         frame_id: header.frame_id,
         lifetime: { sec: 10, nsec: 0 },
