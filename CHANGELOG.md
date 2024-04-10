@@ -1,5 +1,7 @@
-# OdometryFoxgloveConverter version history
+# Changelog
+All notable changes to this project will be documented in this file.
 
-## 0.0.0
+The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
-- Alpha testing
+## Unreleased
+- Initial version.

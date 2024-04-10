@@ -1,11 +1,11 @@
 {
   "name": "OdometryFoxgloveConverter",
-  "displayName": "OdometryFoxgloveConverter",
-  "description": "",
-  "publisher": "unknown",
-  "homepage": "",
+  "displayName": "Odometry Message Converter",
+  "description": "Converter to display Odometry messages in the 3D view.",
+  "publisher": "Jaroslav Klapálek",
+  "homepage": "https://github.com/jara001/OdometryFoxgloveConverter",
   "version": "0.0.0",
-  "license": "UNLICENSED",
+  "license": "GPLv3",
   "main": "./dist/extension.js",
   "keywords": [],
   "scripts": {
