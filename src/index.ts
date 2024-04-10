@@ -1,42 +1,7 @@
 import { ArrowPrimitive, SceneUpdate } from "@foxglove/schemas";
-import { Time } from "@foxglove/schemas/schemas/typescript/Time";
 import { ExtensionContext } from "@foxglove/studio";
 
-//export
-type Header = {
-  seq: number;
-  stamp: Time;
-  frame_id: string;
-};
-
-
-type Position = {
-  x: number;
-  y: number;
-  z: number;
-};
-
-type Orientation = {
-  x: number;
-  y: number;
-  z: number;
-  w: number;
-};
-
-type Pose = {
-  position: Position;
-  orientation: Orientation;
-};
-
-type PoseWithCovariance = {
-  pose: Pose;
-};
-
-
-type Odometry = {
-  header: Header;
-  pose: PoseWithCovariance;
-};
+import { Odometry } from "./Odometry";
 
 
 function convertOdometry(inputMessage: Odometry): SceneUpdate
